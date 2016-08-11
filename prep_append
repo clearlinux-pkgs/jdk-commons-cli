@@ -1,0 +1,3 @@
+# Add alias and symlink 
+python3 /usr/share/java-utils/mvn_alias.py "commons-cli:commons-cli" "org.apache.commons:commons-cli"
+python3 /usr/share/java-utils/mvn_file.py :commons-cli commons-cli apache-commons-cli
