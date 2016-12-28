@@ -4,7 +4,7 @@
 #
 Name     : jdk-commons-cli
 Version  : 1.3.1
-Release  : 5
+Release  : 6
 URL      : http://www.apache.org/dist/commons/cli/source/commons-cli-1.3.1-src.tar.gz
 Source0  : http://www.apache.org/dist/commons/cli/source/commons-cli-1.3.1-src.tar.gz
 Summary  : No detailed summary available
@@ -147,7 +147,7 @@ python3 /usr/share/java-utils/mvn_file.py :commons-cli commons-cli apache-common
 python3 /usr/share/java-utils/mvn_build.py
 
 %install
-xmvn-install  -R .xmvn-reactor -n commons-cli-1.3.1-src -d %{buildroot}
+xmvn-install  -R .xmvn-reactor -n apache-commons-cli -d %{buildroot}
 
 %files
 %defattr(-,root,root,-)
@@ -156,6 +156,6 @@ xmvn-install  -R .xmvn-reactor -n commons-cli-1.3.1-src -d %{buildroot}
 %defattr(-,root,root,-)
 /usr/share/java/apache-commons-cli.jar
 /usr/share/java/commons-cli.jar
-/usr/share/maven-metadata/commons-cli-1.3.1-src.xml
+/usr/share/maven-metadata/apache-commons-cli.xml
 /usr/share/maven-poms/apache-commons-cli.pom
 /usr/share/maven-poms/commons-cli.pom
